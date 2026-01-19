@@ -1,0 +1,159 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Dark Neon Theme - Base Colors */
+  --font-size: 16px;
+  --background: #050607;
+  --surface: #0B0E10;
+  --surface-2: #0F1417;
+  
+  /* Text Colors */
+  --foreground: #F5F7FA;
+  --text-secondary: rgba(245, 247, 250, 0.72);
+  --text-muted: rgba(245, 247, 250, 0.56);
+  
+  /* Neon Accent Colors */
+  --neon-green: #39FF14;
+  --neon-green-hover: #5DFF3C;
+  --neon-green-pressed: #26D90C;
+  
+  /* Borders */
+  --border: rgba(245, 247, 250, 0.10);
+  --border-accent: rgba(57, 255, 20, 0.22);
+  
+  /* Shadows & Glows */
+  --shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 14px 40px rgba(0, 0, 0, 0.55);
+  --glow-neon: 0 0 18px rgba(57, 255, 20, 0.45);
+  --glow-neon-strong: 0 0 28px rgba(57, 255, 20, 0.65);
+  --glow-text: 0 0 14px rgba(57, 255, 20, 0.40);
+  
+  /* Radii */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Legacy compatibility */
+  --card: #0B0E10;
+  --card-foreground: #F5F7FA;
+  --popover: #0B0E10;
+  --popover-foreground: #F5F7FA;
+  --primary: #39FF14;
+  --primary-foreground: #050607;
+  --secondary: rgba(245, 247, 250, 0.06);
+  --secondary-foreground: #F5F7FA;
+  --muted: rgba(245, 247, 250, 0.56);
+  --muted-foreground: rgba(245, 247, 250, 0.56);
+  --accent: #39FF14;
+  --accent-foreground: #050607;
+  --destructive: #FF3B3B;
+  --destructive-foreground: #F5F7FA;
+  --input: rgba(245, 247, 250, 0.04);
+  --input-background: rgba(245, 247, 250, 0.04);
+  --ring: rgba(57, 255, 20, 0.22);
+  --radius: 0.875rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-neon-green: var(--neon-green);
+  --color-neon-green-hover: var(--neon-green-hover);
+  --color-neon-green-pressed: var(--neon-green-pressed);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-border-accent: var(--border-accent);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-ring: var(--ring);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Noise texture effect */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    z-index: 1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");
+  }
+
+  /* Vignette effect */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(5, 6, 7, 0.35) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* Ensure content is above effects */
+  #root {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--foreground);
+  }
+
+  p {
+    line-height: 1.65;
+  }
+}
