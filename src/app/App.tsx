@@ -280,9 +280,16 @@ export default function App() {
                 ))}
               </ul>
 
-              <NeonButton variant="secondary" className="w-full mt-auto">
-                Détails
-              </NeonButton>
+              <a 
+                href="https://thomasbausiere.github.io/ac-immo/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mt-auto"
+              >
+                <NeonButton variant="primary" className="w-full flex items-center justify-center gap-2">
+                  Visiter <ExternalLink size={16} />
+                </NeonButton>
+              </a>
             </NeonCard>
 
             {/* Project 3 */}
