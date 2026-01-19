@@ -206,7 +206,7 @@ export default function App() {
             <NeonCard className="reveal flex flex-col">
               <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1649451844813-3130d6f42f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY29kaW5nJTIwd2Vic2l0ZXxlbnwxfHx8fDE3NjgzODkyNDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/images/gw.jpg"
                   alt="Aperçu projet GW-SH"
                   className="w-full h-full object-cover"
                 />
@@ -253,7 +253,7 @@ export default function App() {
             <NeonCard className="reveal flex flex-col">
               <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1637937459053-c788742455be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHNjcmVlbnxlbnwxfHx8fDE3NjgzMzAzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/images/ac.jpg"
                   alt="Aperçu projet freelance"
                   className="w-full h-full object-cover"
                 />
