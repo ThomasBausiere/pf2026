@@ -88,12 +88,15 @@ export default function App() {
           </h1>
           
           <p className="reveal text-lg md:text-xl font-semibold text-[rgba(245,247,250,0.85)] mb-3">
-          À la recherche d’une entreprise pour réaliser mon alternance et continuer à développer mes compétences.
+          À la recherche de nouvelles opportunités et continuer à me développer.
           </p>
           
           <p className="reveal text-[15px] md:text-base text-[rgba(245,247,250,0.72)] leading-[1.65] max-w-[680px] mx-auto mb-8">
-             Je suis avant tout un développeur passionné et curieux! Le code n’est qu’un moyen, trouver la bonne solution est toujours mon réel objectif. 
+             Je suis avant tout un développeur passionné et curieux!
           </p>
+           <p className="reveal text-[15px] md:text-base text-[rgba(245,247,250,0.72)] leading-[1.65] max-w-[680px] mx-auto mb-8">
+             Le code n’est qu’un moyen, trouver la bonne solution est toujours mon réel objectif. 
+           </p>
 
           <div className="reveal flex flex-col sm:flex-row gap-4 justify-center">
             <NeonButton variant="primary" onClick={() => scrollToSection('#projets')}>
