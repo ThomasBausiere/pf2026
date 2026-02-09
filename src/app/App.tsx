@@ -308,6 +308,13 @@ export default function App() {
               
               <h3 className="text-lg md:text-xl font-bold mb-2">Portfolio Graphiste</h3>
               <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet front-end</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {['HTML', 'CSS', 'Angular'].map((tech) => (
+                  <span key={tech} className="text-xs px-2 py-1 rounded-full bg-[rgba(57,255,20,0.10)] text-[#39FF14] border border-[rgba(57,255,20,0.20)]">
+                    {tech}
+                  </span>
+                ))}
+              </div>
               
               <p className="text-sm text-[rgba(245,247,250,0.72)] mb-3">
                 Portfolio pour une graphiste motion designer
