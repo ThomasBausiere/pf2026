@@ -252,6 +252,46 @@ export default function App() {
               </a>
             </NeonCard>
 
+            <NeonCard className="reveal flex flex-col">
+              <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
+                <ImageWithFallback
+                  src="/images/mzk.png"
+                  alt="Aperçu projet freelance"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0B0E10] to-transparent" />
+              </div>
+              
+              <h3 className="text-lg md:text-xl font-bold mb-2">Portfolio Graphiste</h3>
+              <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet front-end</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {['HTML', 'CSS', 'Angular'].map((tech) => (
+                  <span key={tech} className="text-xs px-2 py-1 rounded-full bg-[rgba(57,255,20,0.10)] text-[#39FF14] border border-[rgba(57,255,20,0.20)]">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              
+              <p className="text-sm text-[rgba(245,247,250,0.72)] mb-3">
+                Portfolio pour une graphiste motion designer
+              </p>
+
+              <ul className="space-y-1.5 mb-4 flex-grow">
+                <li className="flex items-start gap-2 text-sm text-[rgba(245,247,250,0.72)]">
+                  <span className="w-1 h-1 rounded-full bg-[#39FF14] mt-1.5 flex-shrink-0" style={{ boxShadow: '0 0 6px rgba(57, 255, 20, 0.6)' }} />
+                  Objectif : intégration dans le portfolio personnel
+                </li>
+              </ul>
+
+              <NeonButton variant="secondary" className="w-full mt-auto">
+                En cours
+              </NeonButton>
+            </NeonCard>
+          </div>
+        </div>
+      </section>
+
+
             {/* Project 2 */}
             <NeonCard className="reveal flex flex-col">
               <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
@@ -296,45 +336,7 @@ export default function App() {
             </NeonCard>
 
             {/* Project 3 */}
-            <NeonCard className="reveal flex flex-col">
-              <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
-                <ImageWithFallback
-                  src="/images/mzk.png"
-                  alt="Aperçu projet freelance"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0B0E10] to-transparent" />
-              </div>
-              
-              <h3 className="text-lg md:text-xl font-bold mb-2">Portfolio Graphiste</h3>
-              <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet front-end</p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {['HTML', 'CSS', 'Angular'].map((tech) => (
-                  <span key={tech} className="text-xs px-2 py-1 rounded-full bg-[rgba(57,255,20,0.10)] text-[#39FF14] border border-[rgba(57,255,20,0.20)]">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              
-              <p className="text-sm text-[rgba(245,247,250,0.72)] mb-3">
-                Portfolio pour une graphiste motion designer
-              </p>
-
-              <ul className="space-y-1.5 mb-4 flex-grow">
-                <li className="flex items-start gap-2 text-sm text-[rgba(245,247,250,0.72)]">
-                  <span className="w-1 h-1 rounded-full bg-[#39FF14] mt-1.5 flex-shrink-0" style={{ boxShadow: '0 0 6px rgba(57, 255, 20, 0.6)' }} />
-                  Objectif : intégration dans le portfolio personnel
-                </li>
-              </ul>
-
-              <NeonButton variant="secondary" className="w-full mt-auto">
-                En cours
-              </NeonButton>
-            </NeonCard>
-          </div>
-        </div>
-      </section>
-
+            
       {/* Parcours Section */}
       <section id="parcours" className="py-14 md:py-[72px] lg:py-[88px] bg-[#0B0E10]/30">
         <div className="max-w-[1120px] mx-auto px-4 md:px-6">
