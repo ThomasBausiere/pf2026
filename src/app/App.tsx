@@ -209,7 +209,7 @@ export default function App() {
             <NeonCard className="reveal flex flex-col">
               <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
                 <ImageWithFallback
-                  src="/images/gw.jpg"
+                  src="/images/gw.png"
                   alt="Aperçu projet GW-SH"
                   className="w-full h-full object-cover"
                 />
@@ -299,8 +299,8 @@ export default function App() {
             <NeonCard className="reveal flex flex-col">
               <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1652805363265-b8fbf9bbdfac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwcG9ydGZvbGlvfGVufDF8fHx8MTc2ODI4NDQ3NHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Aperçu portfolio graphiste"
+                  src="/images/mzk.png"
+                  alt="Aperçu projet freelance"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0B0E10] to-transparent" />
