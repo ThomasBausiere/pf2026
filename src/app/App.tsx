@@ -306,7 +306,7 @@ export default function App() {
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0B0E10] to-transparent" />
               </div>
               
-              <h3 className="text-lg md:text-xl font-bold mb-2">Portfolio Graphiste (en cours)</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-2">Portfolio Graphiste</h3>
               <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet front-end</p>
               
               <p className="text-sm text-[rgba(245,247,250,0.72)] mb-3">
