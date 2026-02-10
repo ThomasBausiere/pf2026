@@ -75,7 +75,7 @@ export default function App() {
                 style={{ background: 'radial-gradient(circle, rgba(57, 255, 20, 0.30) 0%, transparent 70%)' }}
               />
               <ImageWithFallback
-                src="https://media.licdn.com/dms/image/v2/D4E03AQHiI2wi4IDO-Q/profile-displayphoto-crop_800_800/B4EZrf2mrjIIAI-/0/1764692227144?e=1770249600&v=beta&t=0oy5x9mbeo1o9HtPkqxaOX-q07hJjOpRWXz2PhxMHpw"
+                src="/images/me.png"
                 alt="Portrait"
                 className="relative w-[104px] h-[104px] md:w-[120px] md:h-[120px] lg:w-[136px] lg:h-[136px] rounded-full object-cover border-2 border-[rgba(57,255,20,0.30)]"
                 style={{ boxShadow: '0 0 30px rgba(57, 255, 20, 0.25)' }}
@@ -88,7 +88,7 @@ export default function App() {
           </h1>
           
           <p className="reveal text-lg md:text-xl font-semibold text-[rgba(245,247,250,0.85)] mb-3">
-          À la recherche de nouvelles opportunités et continuer à me développer.
+          À la recherche de nouvelles opportunités afin de continuer à me développer professionnellement.
           </p>
           
           <p className="reveal text-[15px] md:text-base text-[rgba(245,247,250,0.72)] leading-[1.65] max-w-[680px] mx-auto mb-8">
@@ -123,7 +123,7 @@ export default function App() {
                   Objectif
                 </h3>
                 <p className="text-[rgba(245,247,250,0.72)] leading-[1.65]">
-                  Trouver une alternance en tant que développeur back-end Java, front-end Angular ou full stack
+                  Trouver une opportunité dans le secteur du développement, afin de poursuivre mon parcours professionnel.
                 </p>
               </div>
             </NeonCard>
@@ -145,7 +145,7 @@ export default function App() {
                   Motivation
                 </h3>
                 <p className="text-[rgba(245,247,250,0.72)] leading-[1.65]">
-                  Passion de longue date pour l'informatique et la création, reconversion professionnelle volontaire vers le développement logiciel
+                  Passionné depuis toujours par l'univers informatique, je cherche à faire de ma passion mon travail. 
                 </p>
               </div>
             </NeonCard>
@@ -199,7 +199,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Projets Section */}
+{/* Projets Section */}
       <section id="projets" className="py-14 md:py-[72px] lg:py-[88px]">
         <div className="max-w-[1120px] mx-auto px-4 md:px-6">
           <SectionTitle>PROJETS</SectionTitle>
@@ -252,45 +252,51 @@ export default function App() {
               </a>
             </NeonCard>
 
+            {/* Project 3 */}
             <NeonCard className="reveal flex flex-col">
               <div className="relative mb-4 overflow-hidden rounded-lg" style={{ aspectRatio: '16/10' }}>
                 <ImageWithFallback
                   src="/images/mzk.png"
-                  alt="Aperçu projet freelance"
+                  alt="Aperçu portfolio graphiste"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0B0E10] to-transparent" />
               </div>
               
               <h3 className="text-lg md:text-xl font-bold mb-2">Portfolio Graphiste</h3>
-              <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet front-end</p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {['HTML', 'CSS', 'Angular'].map((tech) => (
+              <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet client freelance</p>           
+                <div className="flex flex-wrap gap-2 mb-3">
+                {['TypeScript', 'Angular', 'POO', 'Figma'].map((tech) => (
                   <span key={tech} className="text-xs px-2 py-1 rounded-full bg-[rgba(57,255,20,0.10)] text-[#39FF14] border border-[rgba(57,255,20,0.20)]">
                     {tech}
                   </span>
                 ))}
               </div>
               
-              <p className="text-sm text-[rgba(245,247,250,0.72)] mb-3">
-                Portfolio pour une graphiste motion designer
-              </p>
+
 
               <ul className="space-y-1.5 mb-4 flex-grow">
                 <li className="flex items-start gap-2 text-sm text-[rgba(245,247,250,0.72)]">
                   <span className="w-1 h-1 rounded-full bg-[#39FF14] mt-1.5 flex-shrink-0" style={{ boxShadow: '0 0 6px rgba(57, 255, 20, 0.6)' }} />
-                  Objectif : intégration dans le portfolio personnel
+                  Réalisation d'un site SPA conforme à la maquette fournie par la graphiste
+                </li>
+                <li className="flex items-start gap-2 text-sm text-[rgba(245,247,250,0.72)]">
+                  <span className="w-1 h-1 rounded-full bg-[#39FF14] mt-1.5 flex-shrink-0" style={{ boxShadow: '0 0 6px rgba(57, 255, 20, 0.6)' }} />
+                  Choix de l'architecture en POO pour une application web modulable, flexible et facile à maintenir dans le temps. 
                 </li>
               </ul>
 
-              <NeonButton variant="secondary" className="w-full mt-auto">
-                En cours
-              </NeonButton>
+              <a 
+                href="https://amelmerzouk.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mt-auto"
+              >
+                <NeonButton variant="primary" className="w-full flex items-center justify-center gap-2">
+                  Visiter <ExternalLink size={16} />
+                </NeonButton>
+              </a>
             </NeonCard>
-          </div>
-        </div>
-      </section>
-
 
             {/* Project 2 */}
             <NeonCard className="reveal flex flex-col">
@@ -303,7 +309,7 @@ export default function App() {
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0B0E10] to-transparent" />
               </div>
               
-              <h3 className="text-lg md:text-xl font-bold mb-2">Projet Freelance (Vanilla)</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-2">Site vitrine AC-Immo</h3>
               <p className="text-sm text-[rgba(245,247,250,0.56)] mb-3">Projet client freelance</p>
               
               <div className="flex flex-wrap gap-2 mb-3">
@@ -334,9 +340,9 @@ export default function App() {
                 </NeonButton>
               </a>
             </NeonCard>
-
-            {/* Project 3 */}
-            
+          </div>
+        </div>
+      </section>
       {/* Parcours Section */}
       <section id="parcours" className="py-14 md:py-[72px] lg:py-[88px] bg-[#0B0E10]/30">
         <div className="max-w-[1120px] mx-auto px-4 md:px-6">
@@ -656,7 +662,7 @@ export default function App() {
         <div className="max-w-[1120px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-[rgba(245,247,250,0.62)]">
-              © 2026 — Portfolio Alternance Java / Angular
+              © 2026 — Portfolio Thomas Bausière Java / Angular
             </p>
             <div className="flex items-center gap-4">
               <a
